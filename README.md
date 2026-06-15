@@ -36,12 +36,14 @@ locations.txt example:
 15:61978566
 M:16162
 ...
-```​​
+```
+
 **Region position (Full format)**
 ```text
 12:20850365-12:20860041
 ...
 ```
+
 **Region position (Shortcut format)**
 ```text
 12:20850365-20860041
