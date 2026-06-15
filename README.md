@@ -1,18 +1,24 @@
 # Loc_finder
-This tools is to help you find specific position in vcf.gz file 
+
+A lightweight Python tool designed to quickly search and extract specific genomic positions from a compressed VCF file (`.vcf.gz`).
 
 > [!IMPORTANT]
-> Before we start you will need this file 
-> vcf.gz file as we need to search specific location in this you can't find file with out input right lol~
-> vcf.tbi file this file help us to find loc fast so if you don't have this file please run: tabix -p vcf [path/to/your/vcf.gz/file]
+> **Prerequisites Before You Start:**
+> 1. **`vcf.gz` file**: The target compressed VCF file you want to search. (You can't search without an input file, right?)
+> 2. **`vcf.tbi` file**: This index file is **required** for fast querying. If you don't have it, please generate it using `tabix` before running the script:
+>    ```bash
+>    tabix -p vcf /path/to/your/file.vcf.gz
+>    ```
 
-## Option 
-Basic usage:
-'''
-python loc_finder.py [-h] -vcf  -loc  [-o]
-'''
-Options:
-'-h', '--help'           show this help message and exit
-'-vcf', '--vcf_file'     input VCF.gz file path.
-'-loc', '--loc_file'     txt file for location find (e.g., 15:61978566).
-'-o', '--output_prefix'  out put vcf name, Default: output.
+---
+
+## Usage 
+### Basic Command
+```bash
+python loc_finder.py -vcf <path_to_vcf> -loc <path_to_loc_txt> [-o <output_prefix>]
+```
+### Options:
+`-h`, `--help`           show this help message and exit
+`-vcf`, `--vcf_file`     input VCF.gz file path.
+`-loc`, `--loc_file`     txt file for location find (e.g., 15:61978566).
+`-o`, `--output_prefix`  out put vcf name, Default: output.
