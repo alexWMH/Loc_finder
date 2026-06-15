@@ -25,3 +25,21 @@ python loc_finder.py -vcf <path_to_vcf> -loc <path_to_loc_txt> [-o <output_prefi
 | `-loc`, `--loc_file` | Txt file for location find (e.g., 15:61978566). |
 | `-o`, `--output_prefix` | Output VCF name. (Default: `output`) |
 
+#### loc file
+Search location file  
+> [!Note]
+> location file need contain specific formate
+
+**locations.txt**
+```text
+# Single position
+15:61978566
+M:16162
+
+# Region position (Full format)
+12:20850365-12:20860041
+
+# Region position (Shortcut format)
+12:20850365-20860041
+```​​`
+
