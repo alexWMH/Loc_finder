@@ -30,16 +30,21 @@ Search location file
 > [!Note]
 > location file need contain specific formate
 
-**locations.txt**
+locations.txt example:
+**Single position**
 ```text
-# Single position
 15:61978566
 M:16162
-
-# Region position (Full format)
-12:20850365-12:20860041
-
-# Region position (Shortcut format)
-12:20850365-20860041
+...
 ```​​`
+**Region position (Full format)**
+```text
+12:20850365-12:20860041
+...
+```
+**Region position (Shortcut format)**
+```text
+12:20850365-20860041
+...
+```
 
