@@ -65,7 +65,7 @@ def main():
 
     # check tbi file exists
     if not os.path.exists(args.vcf_file + ".tbi"):
-        # 有些系統的索引檔名會去掉 .gz 變成 .vcf.tbi，一併檢查
+        # some tbi file name does't contain .gz, also check .vcf.tbi  
         alt_tbi = args.vcf_file.replace(".gz", ".tbi")
         if not os.path.exists(alt_tbi):
             print(
