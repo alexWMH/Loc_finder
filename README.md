@@ -15,7 +15,7 @@ A lightweight Python tool designed to quickly search and extract specific genomi
 ## Usage 
 ### Basic Command
 ```bash
-python loc_finder.py -vcf <path_to_vcf> -loc <path_to_loc_txt> [-o <output_prefix>]
+python loc_finder.py -vcf <path_to_vcf> -loc <path_to_loc_txt> -o <output_prefix>
 ```
 ### Options:
 | Options | Description |
