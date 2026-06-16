@@ -50,3 +50,9 @@ M:16162
 ...
 ```
 
+## Output file 
+| Output file | Description |
+| :--- | :--- |
+| `.log` | Program log and execution details. |
+| `_find.txt` | Text file containing summary results of whether each location was found. |
+| `.vcf` | Filtered VCF file containing all the successfully extracted genomic locations. |
